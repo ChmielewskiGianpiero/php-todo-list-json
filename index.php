@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP ToDo List JSON</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div id='app'>
@@ -15,12 +17,11 @@
                     <input type="text" placeholder='inserisci la task'>
                     <ul>
                         <li>task</li>
-                        <li>task</li>
-                        <li>task</li>
                     </ul>
                 </div>
             </section>
         </main>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 </html>
