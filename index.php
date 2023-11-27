@@ -14,9 +14,11 @@
             <section>
                 <div class='container'>
                     <h1>TO DO LIST</h1>
-                    <input type="text" placeholder='inserisci la task'>
+                    <input type="text" placeholder='inserisci la task' v-model='newTodo' @keyup.enter='addTodo'>
                     <ul>
-                        <li>task</li>
+                        <li v-for='(todo,i) in todos' :key='i' :class='{done: todo.done}'>
+                            {{ todo.text }}
+                        </li>
                     </ul>
                 </div>
             </section>
